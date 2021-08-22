@@ -13,10 +13,10 @@ mail($to,$subject,$message,$headers);
 
 echo "Email has been sent! thank you $name"
 
-// $formcontent=" From: $name \n subject: $subject \n Message: $message";
-// $recipient = "randallerasmus1@gmail.com";
-//
-// $mailheader = "From: $email \r\n";
-// mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-// header("location: contact-standart.html")
+ $formcontent=" From: $name \n subject: $subject \n Message: $message";
+ $recipient = "randallerasmus1@gmail.com";
+
+ $mailheader = "From: $email \r\n";
+ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+ header("location: contact-standart.html")
 ?>
